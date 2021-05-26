@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:lottie/lottie.dart';
 
 
 class informal extends StatefulWidget {
@@ -69,6 +70,14 @@ class _informalState extends State<informal> {
                   child: Text('Submit'),
                 ),
               ),Container(
+                height: 420.0,
+                child: Column(
+                  children: <Widget>[
+                    Lottie.asset('assets/employ.json')
+                  ],
+                ),
+              ),
+              Container(
                 child: Padding(
                   padding: const EdgeInsets.only(left:20.0),
                   child: Row(

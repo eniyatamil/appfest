@@ -1,4 +1,5 @@
 import 'dart:io';
+import 'package:gpp/screens/helppage.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 import 'package:flutter/cupertino.dart';
@@ -21,7 +22,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.indigo,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: MyHomePage(title: 'Letter Writing'),
+      home: MyHomePage(title: 'Get Letter'),
     );
   }
 }
@@ -84,7 +85,13 @@ class PopupOptionMenu extends StatelessWidget {
             PopupMenuItem(child: Text('Profile'),
               value: MenuOption.Draft,
             ),
-            PopupMenuItem(child: Text('Help'),
+            PopupMenuItem(child: GestureDetector(onTap:(){
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => HelpPage()),
+              );
+            },
+                child: Text('Help')),
               value: MenuOption.send,
             ),
             PopupMenuItem(child: GestureDetector(onTap: ()=> exit(0),

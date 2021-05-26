@@ -59,10 +59,14 @@ class _CustomizedState extends State<Customized> {
     "Blueberry",
     "Cheese",
     "Danish",
+    "Dear",
+    "dear",
     "Eclair",
     "Fudge",
     "Granola",
     "Hazelnut",
+    "Hello",
+    "hello",
     "Ice Cream",
     "Jely",
     "Kiwi Fruit",
@@ -71,9 +75,16 @@ class _CustomizedState extends State<Customized> {
     "Nachos",
     "Oatmeal",
     "Palm Oil",
+    "Please ",
+    "please",
+    "Purpose",
+    "purposes",
     "Quail",
     "Rabbit",
     "Salad",
+    "suggest",
+    "sending",
+    "supply",
     "T-Bone Steak",
     "Urid Dal",
     "Vanilla",
@@ -111,7 +122,7 @@ class _CustomizedState extends State<Customized> {
     }));
 
     return new Scaffold(
-        resizeToAvoidBottomPadding: false,
+        // resizeToAvoidBottomPadding: false,
         appBar: new AppBar(
             title: new Text('Customized letter'),
             actions: [

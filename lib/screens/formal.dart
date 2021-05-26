@@ -73,14 +73,6 @@ class _FormalState extends State<Formal> {
                 ),
               ),
               Container(
-                height: 420.0,
-                child: Column(
-                  children: <Widget>[
-                    Lottie.asset('assets/lottie.json')
-                  ],
-                ),
-              ),
-              Container(
                 alignment: Alignment.center,
                 child: MaterialButton(onPressed: () {
                   setState(() {
@@ -94,6 +86,14 @@ class _FormalState extends State<Formal> {
                   color: Colors.orange,
                   textColor: Colors.white,
                   child: Text('Submit'),
+                ),
+              ),
+              Container(
+                height: 420.0,
+                child: Column(
+                  children: <Widget>[
+                    Lottie.asset('assets/work.json')
+                  ],
                 ),
               ),
               Container(
